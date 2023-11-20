@@ -36,7 +36,7 @@ let obtenerDatosEmpresa = async (empresa) => {
         console.log(datos.d);
         console.log(datos.c + " USD");
 
-        if (datos.dp <= -5) {
+        if (datos.dp <= -3) {
             console.log(empresa.name + " precio "+ datos.c + " USD" + " ha bajado " + datos.dp);
             destacados.push(empresa);
         }
